@@ -1,0 +1,642 @@
+*{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    border-bottom: 2px solid #ddd;
+    padding: 10px;
+    transition: top 0.3s ease;
+}
+
+.welcome {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.welcome h1{
+    top: 40%;
+    left: 20%;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.welcome p {
+    top: 46%;
+    left: 23%;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.welcome h1, .welcome p{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    transition: color 0.3s ease;
+    z-index: 2;
+}
+
+.welcome h1:hover, .welcome p:hover {
+    color: #0056b3;
+}
+
+#bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(30%);
+}
+    
+
+.menu {
+    position: absolute;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+    margin-left: 10px;
+}
+
+.menu a:hover {
+    color: blue;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.logo img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+main {
+    margin-top: 20px;
+}
+
+.news {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.news_container {
+    width: 400px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s, box-shadow 0.2s;
+}
+
+.news_container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.news_container img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.news_container h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.news_container p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.news_container a {
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: auto;
+    display: inline-block;
+    text-align: center;
+}
+
+
+.news_container a:hover {
+    background-color: #0056b3;
+}
+
+.more-newss {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+}
+
+.more-news {
+    margin-bottom: 20px;
+}
+
+.more-news h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.more-news-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.more-news-link:hover {
+    background-color: #0056b3;
+}
+
+
+.achievements {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.achievements article {
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.achievements img {
+    max-width: 50%;
+    border-radius: 5px 5px 0 0;
+    object-fit: cover;
+}
+
+.achievements-content {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.achievements h2 {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.achievements p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.achievements-news {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+}
+
+.ach-news {
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.ach-news:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.ach-news h1 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.ach-news p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.ach-news a {
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: auto;
+}
+
+.ach-news a:hover {
+    background-color: #0056b3;
+}
+
+.shop, .shop-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.shop-img {
+    max-width: fit-content;
+}
+
+.shop-content {
+    flex: 1;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.shop h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.shop p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.official-shop-link {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.official-shop-link:hover {
+    background-color: #0056b3;
+}
+
+.about {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    margin: 30px auto;
+}
+
+.about h1 {
+    color: #2456c2;
+    font-size: 2.8em;
+    text-align: left;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.about p {
+    font-weight: 500;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.about p:hover {
+    color: #112c85;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    color: #0056b3;
+    padding: 30px;
+    border-radius: 12px;
+    margin: 30px auto;
+}
+
+.app img {
+    width: 150px;
+}
+
+.game {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.game h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.game article {
+    margin-bottom: 20px;
+}
+
+.game p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #666;
+}
+
+.form-tickets {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.form-tickets label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-tickets input {
+    width: calc(100% - 10px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 1rem;
+}
+
+.form-tickets button{
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.form-tickets button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.payments {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    color: #666;
+    text-align: center;
+}
+
+footer {
+    background-color: #f2f2f2;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+.footer-links {
+    margin-bottom: 20px;
+}
+
+.footer-links .footer-link {
+    margin-right: 20px;
+    color: #333;
+    text-decoration: none;
+    transition: color 1s ease;
+}
+
+.footer-links .footer-link:hover {
+    text-decoration: none;
+    color: #112c85;
+
+}
+
+.arrow {
+    display: none;
+    margin-left: 5px;
+    transition: opacity 0.3s ease;
+}
+
+.footer-link:hover .arrow {
+    display: inline;
+    opacity: 1;
+}
+
+.sponsors {
+    margin-top: 20px;
+}
+
+.sponsors a {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.sponsors img {
+    height: 50px;
+    vertical-align: middle;
+}
+
+.animate-on-scroll {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animate-on-scroll.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+@media (max-width: 768px) {
+    
+    .welcome {
+        padding: 80px 10px;
+    }
+
+    .welcome h1, .welcome p{
+        display: none;
+    }
+    
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        top: 20px;
+    }
+    
+    .menu a {
+        margin: 5px 0;
+    }
+    
+    .logo {
+        margin-bottom: 20px;
+    }
+    
+    .news_container {
+        width: 100%;
+    }
+
+    .achievements {
+        flex-direction: column;
+    }
+
+    .achievements article {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .achievements img {
+        border-radius: 5px;
+    }
+
+    .achievements-content {
+        padding: 15px;
+    }
+
+    .achievements h2 {
+        font-size: 1.3em;
+    }
+
+    .achievements p {
+        font-size: 0.9em;
+    }
+    
+    .shop {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .shop-content {
+        text-align: center;
+    }
+    
+    .shop-img {
+        max-width: 80%;
+    }
+    
+    .about {
+        padding: 15px;
+    }
+
+    .about h1 {
+        font-size: 1.8em;
+    }
+
+    .about p {
+        font-size: 0.85em;
+    }
+    
+    .app {
+        font-size: 24px;
+    }
+    
+    .game {
+        padding: 10px;
+    }
+    
+    .game h2 {
+        font-size: 1.2rem;
+    }
+    
+    .game p {
+        font-size: 0.9rem;
+    }
+    
+    .form-tickets input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .news_container {
+        padding: 10px;
+    }
+    
+    .shop-img {
+        max-width: 100%;
+    }
+    
+    .about {
+        font-size: 14px;
+    }
+    
+    .app {
+        font-size: 20px;
+    }
+    
+    .game h2 {
+        font-size: 1rem;
+    }
+    
+    .game p {
+        font-size: 0.8rem;
+    }
+}
